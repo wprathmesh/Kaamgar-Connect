@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+
+* {
+  box-sizing: border-box; 
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --theme-slate: #1e293b;
+  --pure-white: #ffffff;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  /* 🌊 Black to Grey Wavy Gradient Background */
+  background: linear-gradient(135deg, #020617 0%, #1e293b 50%, #475569 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
+  color: var(--pure-white);
+  overflow-x: hidden;
+}
+
+/* 💊 Pill Input Fix */
+.pill-input {
+  width: 100%;
+  padding: 16px 25px;
+  border-radius: 50px;
+  border: 1.5px solid #cbd5e1;
+  background-color: #ffffff;
+  color: #1e293b;
+  font-size: 0.95rem;
+  outline: none;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.pill-input:focus {
+  border-color: var(--theme-slate);
+  box-shadow: 0 0 0 4px rgba(30, 41, 59, 0.1);
+}
+
+/* 🔳 Solid White Card */
+.glass-card {
+  background-color: var(--pure-white);
+  border-radius: 35px;
+  padding: 40px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+}
+
+.main-btn {
+  background-color: var(--theme-slate);
+  color: white;
+  border: none;
+  padding: 16px;
+  border-radius: 50px;
+  font-weight: 800;
+  cursor: pointer;
+  width: 100%;
+  text-transform: uppercase;
+}
